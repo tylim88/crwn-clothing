@@ -1,24 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { ReactComponent as Logo } from '../../assets/crown.svg'
-// https://create-react-app.dev/docs/adding-images-fonts-and-files
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import './header.style.scss'
+import { ReactComponent as Logo } from '../../assets/crown.svg';
 
-const Header = props => (
-	<div className='header'>
-		<Link className='logo-container' to='/'>
-			<Logo className='logo' />
-		</Link>
-		<div className='options'>
-			<Link className='option' to='/'>
-				SHOP
-			</Link>{' '}
-			<Link className='option' to='/'>
-				CONTACT
-			</Link>
-		</div>
-	</div>
-)
+import './header.styles.scss';
 
-export default Header
+const Header = () => (
+  <div className='header'>
+    <Link className='logo-container' to='/'>
+      <Logo className='logo' />
+    </Link>
+    <div className='options'>
+      <Link className='option' to='/shop'>
+        SHOP
+      </Link>
+      <Link className='option' to='/shop'>
+        CONTACT
+      </Link>
+    </div>
+  </div>
+);
+
+export default Header;
