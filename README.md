@@ -1,6 +1,6 @@
-## Lesson-11
+## Lesson-18
 
-Finally we update our sign-in component with our email/password sign in.
+We want to separate all our business logic in our selectors. In this lesson we add a new selector to show our total count of items.
 
 # How to fork and clone
 
